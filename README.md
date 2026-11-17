@@ -1,16 +1,18 @@
-# React + Vite
+# Proyecto Momento 1 - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto traslada un diseño estático a un ecosistema de React, dividiendo la interfaz en componentes reutilizables y manejando datos estáticos a través de estados locales.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías
+- React
+- Vite
+- CSS en línea
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 Historias de Usuario
 
-## React Compiler
+1. **HU-01:** Como visitante, quiero ver una barra de navegación en la parte superior para poder identificar la marca y navegar por el sitio.
+2. **HU-02:** Como visitante, quiero ver una lista de productos con su nombre y precio en la página principal para conocer la oferta de la marca.
+3. **HU-03:** Como visitante, quiero ver un pie de página con información de derechos de autor para saber quién es el dueño del sitio.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🗂️ Estructura
+- `src/components/`: Componentes reutilizables (Navbar, Footer, ProductCard).
+- `src/views/`: Vistas principales (Home).
