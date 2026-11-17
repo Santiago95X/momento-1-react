@@ -1,9 +1,10 @@
 import React from 'react';
+import '../styles/Home.css';
 
 const Footer = () => {
   return (
-    <footer style={{ padding: '1rem', background: '#333', color: 'white', textAlign: 'center', marginTop: 'auto' }}>
-      <p style={{ margin: 0 }}>© 2024 Mi Proyecto React - Todos los derechos reservados</p>
+    <footer className="footer">
+      <p>© 2024 Mi Proyecto React - Todos los derechos reservados</p>
     </footer>
   );
 };

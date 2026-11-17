@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/Home.css';
 
 const Navbar = () => {
   return (
-    <nav style={{ padding: '1rem', background: '#333', color: 'white', display: 'flex', justifyContent: 'space-between' }}>
-      <h1 style={{ margin: 0, fontSize: '1.5rem' }}>Mi Marca de Sazón</h1>
-      <ul style={{ display: 'flex', listStyle: 'none', gap: '1rem', margin: 0, padding: 0 }}>
+    <nav className="navbar">
+      <h1 className="logo">Mi Marca de Sazón</h1>
+      <ul className="nav-links">
         <li>Inicio</li>
         <li>Productos</li>
         <li>Contacto</li>

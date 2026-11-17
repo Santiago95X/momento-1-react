@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
+import '../styles/Home.css';
 
 const Home = () => {
   const [listaSazon, setListaSazon] = useState([
@@ -12,11 +13,11 @@ const Home = () => {
   ]);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#f4f4f4' }}>
+    <div className="app-container">
       <Navbar />
-      <main style={{ padding: '2rem', flex: 1, textAlign: 'center' }}>
-        <h2>Nuestros Productos</h2>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <main className="main-content">
+        <h2 className="section-title">Nuestros Productos</h2>
+        <div className="products-grid">
           {listaSazon.map((item) => (
             <ProductCard key={item.id} data={item} />
           ))}
