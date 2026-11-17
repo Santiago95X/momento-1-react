@@ -16,7 +16,13 @@ const Home = () => {
     <div className="app-container">
       <Navbar />
       <main className="main-content">
-        <h2 className="section-title">Nuestros Productos</h2>
+        <div className="hero-section">
+          <h2 className="section-title">Nuestros Productos</h2>
+          <p className="section-subtitle">
+            Descubre nuestra selección de especias y sazonadores naturales, 
+            perfectos para darle vida a tus recetas.
+          </p>
+        </div>
         <div className="products-grid">
           {listaSazon.map((item) => (
             <ProductCard key={item.id} data={item} />

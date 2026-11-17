@@ -4,7 +4,10 @@ import '../styles/Home.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="logo">Mi Marca de Sazón</h1>
+      <div className="logo-container">
+        <span className="logo-icon">🌿</span>
+        <h1 className="logo">Sazón Natural</h1>
+      </div>
       <ul className="nav-links">
         <li>Inicio</li>
         <li>Productos</li>
